@@ -13,14 +13,12 @@ export default class ErrorBoundary extends Component {
 
   componentDidCatch(error, errorInfo) {
     //log the catched error and save the errorInfo in the state
-    console.log('errorInfo', errorInfo)
     this.setState({ errorInfo })
     console.warn(error)
   }
 
   render() {
     const { state: { hasError, errorInfo }, props: { children } } = this
-    console.log('RENDER', errorInfo)
     if (hasError && errorInfo) {
       return (
         <>
@@ -34,5 +32,4 @@ export default class ErrorBoundary extends Component {
     }
     return children
   }
-
 }
