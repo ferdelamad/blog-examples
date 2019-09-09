@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { EBExample01 } from './ErrorBounderies/'
+import { EBExample01 } from './ErrorBoundaries'
 
 function App() {
   return (
