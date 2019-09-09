@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { EBExample01 } from './ErrorBoundaries'
+import { EBExample01, EBExample02 } from './ErrorBoundaries'
 
 function App() {
   return (
     <div style={{ margin: '10px'}}>
-     <EBExample01 />
+     {/* <EBExample01 /> */}
+     <EBExample02 />
     </div>
   );
 }
